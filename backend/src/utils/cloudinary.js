@@ -27,7 +27,7 @@ const uploadOnCloudinary = async (localFilePath) => {
     return null;
 }
 
-cloudinary.v2.uploader.upload("",
+cloudinary.uploader.upload("",
     {
         public_id: ""
     },
@@ -35,3 +35,5 @@ cloudinary.v2.uploader.upload("",
         console.log(result);
     }
 )
+
+export {uploadOnCloudinary}
