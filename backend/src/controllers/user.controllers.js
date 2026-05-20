@@ -502,6 +502,7 @@ export  {
     getCurrentUser,
     updateAccount,
     updateUserAvatar,
+    getUserChannelProfile,
     updateUserCoverImage,
     getWatchHistory
 
