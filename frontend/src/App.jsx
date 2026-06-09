@@ -9,12 +9,17 @@ function App() {
       try {
         const response = await  fetch("http://localhost:8000/api/v1/users")
 
+        if(!response.ok) {
+          throw new Error('Failed to fetch users')
+        }
+
         const data = await response.json();
 
         setUsers(data);
+        
       } catch(error) {
-        console.log(error);
-      }
+        console.error(error);
+      } 
 
     };
 
